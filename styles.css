@@ -220,42 +220,42 @@ p {
 }
 
 .hero-section__image {
-	width: 308px;
-	height: 371px;
-	margin-bottom: 2em;
+	width: 19.25rem;
+	height: auto;
+	margin-bottom: 2rem;
 }
 
 
 .hero-section__heading {
-	font-size: 32px;
+	font-size: 2rem;
 }
 
 .hero-section__subheading {
-	font-size: 16px;
+	font-size: 1rem;
 	color: var(--my-yellow);
 }
 
 .hero-section__paragraph {
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 0.75rem;
 }
 
 .hero-section__badge-generic {
-	width: 28px;
-	height: 28px;
+	width: 1.75rem;
+	height: 1.75rem;
 }
 
 .hero-section__badge-java {
-	width: 24px;
-	height: 24px;
-	padding: 2px;
+	width: 1.5rem;
+	height: 1.5rem;
+	padding: 0.125rem;
 	background-color: white;
 	border-radius: 20%;
 }
 
 .hero-section__badge-mysql {
-	width: 28px;
-	height: 28px;
+	width: 1.75rem;
+	height: 1.75rem;
 	background-color: white;
 	border-radius: 20%;
 }
@@ -268,33 +268,33 @@ p {
 }
 
 .benefits-section__card {
-	width: 212px;
+	width: 13.25rem;
 	text-align: left;
 }
 
 .benefits-section__image {
-	width: 212px;
+	width: 13.25rem;
 }
 
 .benefits-section__heading {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 .benefits-section__paragraph {
-	font-size: 12px;
-	width: 212px;
+	font-size: 0.75rem;
+	width: 13.25rem;
 }
 
-.call-to-action{
+.call-to-action {
 	text-align: center;
 }
 
 .call-to-action__button {
-	width: 120px;
-	height: 32px;
+	width: 7.5rem;
+	height: 2rem;
 	border: 0px;
 	font-family: Horizon;
-	font-size: 12px;
+	font-size: 0.75rem;
 	color: var(--my-black);
 	background-color: var(--my-yellow);
 }
@@ -307,22 +307,22 @@ p {
 
 
 /* ≥568px ---- Phones in landscape mode, smaller tablets) */
-@media screen and (min-width: 35.5em) {}
+@media screen and (min-width: 35.5rem) {}
 
 /* ≥768px ---- Larger tablets and smaller desktop screens */
-@media screen and (min-width: 48em) {}
+@media screen and (min-width: 48rem) {}
 
 /* ≥1024px --- Standard desktop and laptop screens */
-@media screen and (min-width: 64em) {}
+@media screen and (min-width: 64rem) {}
 
 /* 	≥1280px --- Larger desktop screens and some high-resolution laptops */
-@media screen and (min-width: 80em) {}
+@media screen and (min-width: 80rem) {}
 
 /* ≥1920px --- Larger desktop screens and high-resolution monitors */
-@media screen and (min-width: 120em) {}
+@media screen and (min-width: 120rem) {}
 
 /* ≥2560px --- Ultra-high-definition monitors and large displays */
-@media screen and (min-width: 160em) {}
+@media screen and (min-width: 160rem) {}
 
 /* ≥3840px --- Ultra-high-definition monitors and large displays */
-@media screen and (min-width: 240em) {}
+@media screen and (min-width: 240rem) {}
