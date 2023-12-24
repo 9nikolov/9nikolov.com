@@ -285,14 +285,18 @@ p {
 	width: 212px;
 }
 
-.call-to-action {
-	border: 0px;
+.call-to-action{
+	text-align: center;
+}
+
+.call-to-action__button {
 	width: 120px;
 	height: 32px;
-	background-color: var(--my-yellow);
+	border: 0px;
 	font-family: Horizon;
-	color: var(--my-black);
 	font-size: 12px;
+	color: var(--my-black);
+	background-color: var(--my-yellow);
 }
 
 /*----------------------------------------------
