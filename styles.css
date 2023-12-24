@@ -222,42 +222,31 @@ p {
 .hero-section__image {
 	width: 19.25rem;
 	height: auto;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 
 .hero-section__heading {
 	font-size: 2rem;
+	margin-bottom: 0.25rem;
 }
 
 .hero-section__subheading {
 	font-size: 1rem;
 	color: var(--my-yellow);
+	margin-bottom: 1.5rem;
 }
 
 .hero-section__paragraph {
 	font-weight: bold;
 	font-size: 0.75rem;
+	margin-bottom: 0.5rem;
 }
 
-.hero-section__badge-generic {
+.hero-section__badge {
 	width: 1.75rem;
 	height: 1.75rem;
-}
-
-.hero-section__badge-java {
-	width: 1.5rem;
-	height: 1.5rem;
-	padding: 0.125rem;
-	background-color: white;
-	border-radius: 20%;
-}
-
-.hero-section__badge-mysql {
-	width: 1.75rem;
-	height: 1.75rem;
-	background-color: white;
-	border-radius: 20%;
+	margin: 0.25rem;
 }
 
 .benefits-section {
