@@ -40,8 +40,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
+
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -54,6 +53,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-size: 16px;
 }
 
 a{
@@ -130,7 +130,6 @@ p{
 	font-size: 12px;
 }
 
-
 .hero-section__badge-generic{
 	width: 28px;
 	height: 28px;
@@ -151,25 +150,25 @@ p{
 		border-radius: 20%;
 }
 
-.about-me-section__image{
-	width: 212px;
-}
-
-.about-me-section__heading{
-	font-size:24px;
-}
-
-.about-me-section__paragraph{
-	font-size: 12px;
-	width: 212px;
-}
-
-.about-me-section__container{
+.benefits-section__card{
 	width: 212px;
 	text-align: left;
 }
 
-.button-hire-me{
+.benefits-section__image{
+	width: 212px;
+}
+
+.benefits-section__heading{
+	font-size:24px;
+}
+
+.benefits-section__paragraph{
+	font-size: 12px;
+	width: 212px;
+}
+
+.call-to-action{
 	border: 0px;
 	width: 120px;
 	height: 32px;
@@ -186,20 +185,23 @@ p{
 ----------------------------------------------*/
 
 
-/* Phones in landscape mode, smaller tablets */
-@media screen and (min-width: 568px){}
+/* ≥568px ---- Phones in landscape mode, smaller tablets) */
+@media screen and (min-width: 35.5em){}
 
-/* Larger tablets and smaller desktop screens */
-@media screen and (min-width: 768px){}
+/* ≥768px ---- Larger tablets and smaller desktop screens */
+@media screen and (min-width: 48em){}
 
-/* Standard desktop and laptop screens */
-@media screen and (min-width: 1024px){}
+/* ≥1024px --- Standard desktop and laptop screens */
+@media screen and (min-width: 64em){}
 
-/* Larger desktop screens and some high-resolution laptops */
-@media screen and (min-width: 1280px){}
+/* 	≥1280px --- Larger desktop screens and some high-resolution laptops */
+@media screen and (min-width: 80em){}
 
-/* Larger desktop screens and high-resolution monitors */
-@media screen and (min-width: 1920px){}
+/* ≥1920px --- Larger desktop screens and high-resolution monitors */
+@media screen and (min-width: 120em){}
 
-/* Ultra-high-definition monitors and large displays */
-@media screen and (min-width: 2560px){}
+/* ≥2560px --- Ultra-high-definition monitors and large displays */
+@media screen and (min-width: 160em){}
+
+/* ≥3840px --- Ultra-high-definition monitors and large displays */
+@media screen and (min-width: 240em){}
