@@ -55,6 +55,12 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -78,8 +84,100 @@ table {
 ------------------------------------------------
 ----------------------------------------------*/
 
+:root {
+	--my-yellow: #FFC600;
+	--my-black: #111111;
+}
+
+body{
+	background-color: var(--my-black);
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: Horizon;
+}
+
+p{
+	font-family: Arial;
+}
+
+.hero-section{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.hero-section__image{
+	width: 308px;
+	height: 371px;
+}
 
 
+.hero-section__heading{
+	font-size: 32px;
+}
+
+.hero-section__subheading{
+	font-size: 16px;
+	color: var(--my-yellow);
+}
+
+.hero-section__paragraph{
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+.hero-section__badge-generic{
+	width: 28px;
+	height: 28px;
+}
+
+.hero-section__badge-java{
+	width: 24px;
+	height: 24px;
+	padding: 2px;
+	background-color: white;
+	border-radius: 20%;
+}
+
+.hero-section__badge-mysql{
+		width: 28px;
+		height: 28px;
+		background-color: white;
+		border-radius: 20%;
+}
+
+.about-me-section__image{
+	width: 212px;
+}
+
+.about-me-section__heading{
+	font-size:24px;
+}
+
+.about-me-section__paragraph{
+	font-size: 12px;
+	width: 212px;
+}
+
+.about-me-section__container{
+	width: 212px;
+	text-align: left;
+}
+
+.button-hire-me{
+	border: 0px;
+	width: 120px;
+	height: 32px;
+	background-color: var(--my-yellow);
+	font-family: Horizon;
+	color: var(--my-black);
+	font-size: 12px;
+}
 
 /*----------------------------------------------
 ------------------------------------------------
