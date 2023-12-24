@@ -35,19 +35,87 @@ Copyright 2024. All Rights Reserved.
 ------------------------------------------------
 ----------------------------------------------*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -55,26 +123,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -95,8 +181,8 @@ table {
 html {
 	font-size: var(--base-font-size);
 }
-  
-body{
+
+body {
 	background-color: var(--my-black);
 	color: white;
 }
@@ -106,11 +192,16 @@ a {
 	color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: Horizon;
 }
 
-p{
+p {
 	font-family: Arial;
 }
 
@@ -120,41 +211,41 @@ p{
 ------------------------------------------------
 ----------------------------------------------*/
 
-.hero-section{
-	display:flex;
+.hero-section {
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 
-.hero-section__image{
+.hero-section__image {
 	width: 308px;
 	height: 371px;
 	margin-bottom: 2em;
 }
 
 
-.hero-section__heading{
+.hero-section__heading {
 	font-size: 32px;
 }
 
-.hero-section__subheading{
+.hero-section__subheading {
 	font-size: 16px;
 	color: var(--my-yellow);
 }
 
-.hero-section__paragraph{
+.hero-section__paragraph {
 	font-weight: bold;
 	font-size: 12px;
 }
 
-.hero-section__badge-generic{
+.hero-section__badge-generic {
 	width: 28px;
 	height: 28px;
 }
 
-.hero-section__badge-java{
+.hero-section__badge-java {
 	width: 24px;
 	height: 24px;
 	padding: 2px;
@@ -162,32 +253,39 @@ p{
 	border-radius: 20%;
 }
 
-.hero-section__badge-mysql{
-		width: 28px;
-		height: 28px;
-		background-color: white;
-		border-radius: 20%;
+.hero-section__badge-mysql {
+	width: 28px;
+	height: 28px;
+	background-color: white;
+	border-radius: 20%;
 }
 
-.benefits-section__card{
+.benefits-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.benefits-section__card {
 	width: 212px;
 	text-align: left;
 }
 
-.benefits-section__image{
+.benefits-section__image {
 	width: 212px;
 }
 
-.benefits-section__heading{
-	font-size:24px;
+.benefits-section__heading {
+	font-size: 24px;
 }
 
-.benefits-section__paragraph{
+.benefits-section__paragraph {
 	font-size: 12px;
 	width: 212px;
 }
 
-.call-to-action{
+.call-to-action {
 	border: 0px;
 	width: 120px;
 	height: 32px;
@@ -205,22 +303,22 @@ p{
 
 
 /* ≥568px ---- Phones in landscape mode, smaller tablets) */
-@media screen and (min-width: 35.5em){}
+@media screen and (min-width: 35.5em) {}
 
 /* ≥768px ---- Larger tablets and smaller desktop screens */
-@media screen and (min-width: 48em){}
+@media screen and (min-width: 48em) {}
 
 /* ≥1024px --- Standard desktop and laptop screens */
-@media screen and (min-width: 64em){}
+@media screen and (min-width: 64em) {}
 
 /* 	≥1280px --- Larger desktop screens and some high-resolution laptops */
-@media screen and (min-width: 80em){}
+@media screen and (min-width: 80em) {}
 
 /* ≥1920px --- Larger desktop screens and high-resolution monitors */
-@media screen and (min-width: 120em){}
+@media screen and (min-width: 120em) {}
 
 /* ≥2560px --- Ultra-high-definition monitors and large displays */
-@media screen and (min-width: 160em){}
+@media screen and (min-width: 160em) {}
 
 /* ≥3840px --- Ultra-high-definition monitors and large displays */
-@media screen and (min-width: 240em){}
+@media screen and (min-width: 240em) {}
