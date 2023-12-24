@@ -139,10 +139,6 @@ section {
 	display: block;
 }
 
-body {
-	line-height: 1;
-}
-
 ol,
 ul {
 	list-style: none;
@@ -187,6 +183,11 @@ body {
 	color: white;
 }
 
+p {
+	font-family: Arial;
+	line-height: 150%;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -199,10 +200,7 @@ h4,
 h5,
 h6 {
 	font-family: Horizon;
-}
-
-p {
-	font-family: Arial;
+	line-height: 125%;
 }
 
 /*----------------------------------------------
@@ -217,36 +215,45 @@ p {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
 }
 
 .hero-section__image {
-	width: 19.25rem;
+	width: 70%;
+	max-width: 300px;
 	height: auto;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 
+.hero-section_headings-container {
+	margin-bottom: 1rem;
+}
+
 .hero-section__heading {
 	font-size: 2rem;
-	margin-bottom: 0.25rem;
 }
 
 .hero-section__subheading {
 	font-size: 1rem;
 	color: var(--my-yellow);
-	margin-bottom: 1.5rem;
+
 }
 
 .hero-section__paragraph {
 	font-weight: bold;
 	font-size: 0.75rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.25rem;
+
 }
+
+.hero-section__badges-sets-wrapper {}
 
 .hero-section__badge {
 	width: 1.75rem;
 	height: 1.75rem;
-	margin: 0.25rem;
+	padding: 0.25rem;
 }
 
 .benefits-section {
@@ -257,21 +264,29 @@ p {
 }
 
 .benefits-section__card {
-	width: 13.25rem;
+	width: 80%;
+	max-width: 320px;
 	text-align: left;
+	margin-bottom: 4rem;
 }
 
 .benefits-section__image {
-	width: 13.25rem;
+	width: 100%;
+	max-width: 320px;
+	margin-bottom: 1rem;
 }
 
 .benefits-section__heading {
 	font-size: 1.5rem;
+	margin-bottom: 0.75rem;
 }
 
 .benefits-section__paragraph {
-	font-size: 0.75rem;
-	width: 13.25rem;
+	font-size: 1rem;
+}
+
+.benefits-section__card p:not(:last-child) {
+	margin-bottom: 1rem;
 }
 
 .call-to-action {
@@ -286,6 +301,7 @@ p {
 	font-size: 0.75rem;
 	color: var(--my-black);
 	background-color: var(--my-yellow);
+	margin-bottom: 4rem;
 }
 
 /*----------------------------------------------
@@ -294,6 +310,49 @@ p {
 ------------------------------------------------
 ----------------------------------------------*/
 
+
+/* <259px ---- Very small devices */
+/*
+@media (max-width: 259px) {
+	.hero-section__image {
+		width: 80%;
+	}
+
+	.hero-section__heading {
+		font-size: clamp(1.25rem, 0rem + 5.6437vw, 2rem);
+	}
+
+	.hero-section__subheading {
+		font-size: clamp(0.875rem, 0rem + 5.6437vw, 2rem);
+		color: var(--my-yellow);
+	}
+
+	.hero-section__badge {
+		width: 1.25rem;
+		height: 1.25rem;
+		padding: 0.1rem;
+	}
+
+	.benefits-section__heading {
+		font-size: clamp(0.875rem, 0rem + 5.6437vw, 1rem);
+	}
+
+	.benefits-section__paragraph {
+		font-size: clamp(0.875rem, 0rem + 5.6437vw, 1rem);
+	}
+
+	.benefits-section__card {
+		width: 90%;
+		max-width: 300px;
+		text-align: left;
+		margin-bottom: 4rem;
+	}
+
+	.benefits-section__image {
+		margin-bottom: 1rem;
+	}
+}
+*/
 
 /* ≥568px ---- Phones in landscape mode, smaller tablets) */
 @media screen and (min-width: 35.5rem) {}
