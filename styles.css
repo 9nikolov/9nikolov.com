@@ -231,6 +231,12 @@ h6 {
 	margin-bottom: 1rem;
 }
 
+.emoji-waving-hand {
+	width: 24px;
+	height: 24spx;
+	margin-right: 1rem;
+}
+
 .hero-section__heading {
 	font-size: 2rem;
 }
@@ -355,7 +361,115 @@ h6 {
 */
 
 /* ≥568px ---- Phones in landscape mode, smaller tablets) */
-@media screen and (min-width: 35.5rem) {}
+@media screen and (min-width: 35.5em) {
+
+	.hero-section__heading {
+		font-size: 3rem;
+	}
+
+	.hero-section__subheading {
+		font-size: 1.5rem;
+	}
+
+	.hero-section__paragraph {
+		margin-top: 24px;
+		font-size: 1rem;
+	}
+
+	.hero-section__badge {
+		width: 2rem;
+		height: 2rem;
+		padding: 0.5rem;
+	}
+
+	.benefits-section__card {
+		display: flex;
+		flex-direction: row;
+		/* Change flex direction to row */
+		align-items: center;
+		/* Center items vertically */
+		flex-wrap: wrap;
+
+		min-width: 408px;
+		max-width: 450px;
+		text-align: left;
+		margin-bottom: 4rem;
+	}
+
+	.benefits-section__image {
+		width: 240px;
+		margin: 0px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: end;
+		order: 3;
+		margin-left: auto;
+	}
+
+	.emoji-waving-hand {
+		width: 28px;
+		height: 28px;
+		margin-right: 1.5rem;
+	}
+
+	.benefits-section__heading {
+		display: flex;
+		order: 0;
+	}
+
+	.benefits-section__paragraph {
+		display: flex;
+		order: 5555;
+		margin-top: 1rem;
+		line-height: 1.5;
+	}
+
+	.benefits-section__card:nth-child(2) {
+		.benefits-section__image {
+			width: 212px;
+			margin: 0px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: end;
+			order: -2;
+			margin-right: auto;
+		}
+
+		/* Add your styles for the second child here */
+	}
+
+	/* ... (existing styles) */
+
+	.benefits-section__card p:not(:last-child) {
+		margin-bottom: 0rem;
+	}
+
+	.call-to-action__button {
+		margin-top: 1rem;
+	}
+
+	.hero-section__badges-sets-wrapper {
+		margin-top: 8px;
+		display: flex;
+	}
+
+	.hero-section__badge {
+		width: 30px;
+		height: 30px;
+		padding: 0;
+		padding-right: 12px;
+	}
+
+}
+
+
+@media screen and (min-width: 36em) and (max-width: 48em) {
+	.benefits-section__card {}
+
+
+
+
+}
 
 /* ≥768px ---- Larger tablets and smaller desktop screens */
 @media screen and (min-width: 48rem) {}
