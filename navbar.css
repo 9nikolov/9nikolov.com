@@ -93,6 +93,7 @@ body{
         z-index: 9999;
         border-left: 0.5px solid gray;
         padding-right: 40px;
+        padding-left: 24px;
         transition: 1.05s ease;
     }
 
@@ -105,8 +106,7 @@ body{
     }
 }
 
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 567px){
 
     .navbar {
         height: 60px;
