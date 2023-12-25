@@ -465,17 +465,69 @@ h6 {
 
 }
 
-
-@media screen and (min-width: 36em) and (max-width: 48em) {
-	.benefits-section__card {}
-
-
-
-
-}
-
 /* ≥768px ---- Larger tablets and smaller desktop screens */
-@media screen and (min-width: 48rem) {}
+@media screen and (min-width: 48rem) {
+
+	.hero-section{
+		flex-direction: row;
+	}
+
+	.hero-section_headings-container{
+		text-align: left;
+	}
+
+	.hero-section__paragraph{
+		text-align: left;
+	}
+
+	.hero-section__image{
+		order: 2;
+	}
+
+	.hero-section__badges-sets-wrapper {
+		margin-top: 8px;
+		text-align: left;
+		display: contents;
+	}
+
+	.benefits-section__card{
+		display: block;
+		width: 700px;
+		max-width: none;
+	}
+
+	.benefits-section__image{
+		display: inline-block;
+		width: 288px;
+		height: auto;
+		margin-bottom: 1rem;
+	}
+
+	.benefits-section__heading{
+		font-size: 2rem;
+	}
+
+	.benefits-section__paragraph{
+		font-size: 1rem;
+	}
+	.benefits-section__card {
+	min-width: none;
+    max-width: none;
+	}
+	.benefits-section__card{
+		width: none;
+	}
+	.benefits-section .benefits-section__image {
+		width: 100%;
+	}
+
+
+	.call-to-action__button {
+		width: 200px;
+		height: 40px;
+		font-size: 1rem;
+	}
+}
 
 /* ≥1024px --- Standard desktop and laptop screens */
 @media screen and (min-width: 64rem) {}
