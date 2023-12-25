@@ -517,10 +517,11 @@ h6 {
 	.benefits-section__card{
 		width: none;
 	}
-	.benefits-section .benefits-section__image {
-		width: 100%;
-	}
 
+	.benefits-section__card:nth-child(2) {
+		.benefits-section__image {
+			width: 288px;
+		}
 
 	.call-to-action__button {
 		width: 200px;
