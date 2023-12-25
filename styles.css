@@ -168,6 +168,9 @@ table {
 ------------------------------------------------
 ----------------------------------------------*/
 
+@font-face { font-family: Horizon; src: url('fonts/horizon.otf'); }
+@font-face { font-family: Horizon-Outlined; src: url('fonts/horizon_outlined.otf'); }
+
 :root {
 	--base-font-size: 16px;
 	--my-yellow: #FFC600;
