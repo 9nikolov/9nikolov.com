@@ -1,214 +1,13 @@
-/*************************************************
-**************************************************
-
-Website Details:
-    - Name: 9nikolov
-    - URL: 9nikolov.com
-
-Author:
-    - Name: Nikola Nikolov
-    - Personal Website: 9nikolov.com
-    - Social Media:
-        - Twitter:   twitter.com/9nikolov
-        - LinkedIn:  linkedin.com/in/9nikolov
-        - Instagram: instagram.com/9nikolov
-        - Facebook:  facebook.com/9nikolov
-    - GitHub: github.com/9nikolov
-
-Copyright 2024. All Rights Reserved.
-
-*************************************************
-************************************************/
-
 /************************************************
 *************************************************
-1. CSS Reset ------------------------ 
-2. Global Styles --------------------
-3. Component Styles ----------------- 
-4. Media Queries --------------------
+2. Component Styles -----------------
+3. Media Queries --------------------
 *************************************************
 ************************************************/
 
 /*----------------------------------------------
 ------------------------------------------------
-1. CSS Reset
-------------------------------------------------
-----------------------------------------------*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-ol,
-ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*----------------------------------------------
-------------------------------------------------
-2. Global Styles
-------------------------------------------------
-----------------------------------------------*/
-
-@font-face { font-family: Horizon; src: url('fonts/horizon.otf'); }
-@font-face { font-family: Horizon-Outlined; src: url('fonts/horizon_outlined.otf'); }
-
-:root {
-	--base-font-size: 16px;
-	--my-yellow: #FFC600;
-	--my-black: #111111;
-}
-
-html {
-	font-size: var(--base-font-size);
-}
-
-body {
-	background-color: var(--my-black);
-	color: white;
-}
-
-p {
-	font-family: Arial;
-	line-height: 150%;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: Horizon;
-	line-height: 125%;
-}
-
-/*----------------------------------------------
-------------------------------------------------
-3. Component Styles
+2. Component Styles
 ------------------------------------------------
 ----------------------------------------------*/
 
@@ -251,10 +50,8 @@ h6 {
 }
 
 .hero-section__paragraph {
-	font-weight: bold;
-	font-size: 0.75rem;
-	margin-bottom: 0.25rem;
-
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 .hero-section__badges-sets-wrapper {}
@@ -315,7 +112,7 @@ h6 {
 
 /*----------------------------------------------
 ------------------------------------------------
-4. Media Queries
+3. Media Queries
 ------------------------------------------------
 ----------------------------------------------*/
 
@@ -468,19 +265,19 @@ h6 {
 /* ≥768px ---- Larger tablets and smaller desktop screens */
 @media screen and (min-width: 48rem) {
 
-	.hero-section{
+	.hero-section {
 		flex-direction: row;
 	}
 
-	.hero-section_headings-container{
+	.hero-section_headings-container {
 		text-align: left;
 	}
 
-	.hero-section__paragraph{
+	.hero-section__paragraph {
 		text-align: left;
 	}
 
-	.hero-section__image{
+	.hero-section__image {
 		order: 2;
 	}
 
@@ -490,31 +287,33 @@ h6 {
 		display: contents;
 	}
 
-	.benefits-section__card{
+	.benefits-section__card {
 		display: block;
 		width: 700px;
 		max-width: none;
 	}
 
-	.benefits-section__image{
+	.benefits-section__image {
 		display: inline-block;
 		width: 288px;
 		height: auto;
 		margin-bottom: 1rem;
 	}
 
-	.benefits-section__heading{
+	.benefits-section__heading {
 		font-size: 2rem;
 	}
 
-	.benefits-section__paragraph{
+	.benefits-section__paragraph {
 		font-size: 1rem;
 	}
+
 	.benefits-section__card {
-	min-width: none;
-    max-width: none;
+		min-width: none;
+		max-width: none;
 	}
-	.benefits-section__card{
+
+	.benefits-section__card {
 		width: none;
 	}
 
@@ -523,24 +322,24 @@ h6 {
 			width: 288px;
 		}
 
-	.call-to-action__button {
-		width: 200px;
-		height: 40px;
-		font-size: 1rem;
+		.call-to-action__button {
+			width: 200px;
+			height: 40px;
+			font-size: 1rem;
+		}
 	}
-}
 
-/* ≥1024px --- Standard desktop and laptop screens */
-@media screen and (min-width: 64rem) {}
+	/* ≥1024px --- Standard desktop and laptop screens */
+	@media screen and (min-width: 64rem) {}
 
-/* 	≥1280px --- Larger desktop screens and some high-resolution laptops */
-@media screen and (min-width: 80rem) {}
+	/* 	≥1280px --- Larger desktop screens and some high-resolution laptops */
+	@media screen and (min-width: 80rem) {}
 
-/* ≥1920px --- Larger desktop screens and high-resolution monitors */
-@media screen and (min-width: 120rem) {}
+	/* ≥1920px --- Larger desktop screens and high-resolution monitors */
+	@media screen and (min-width: 120rem) {}
 
-/* ≥2560px --- Ultra-high-definition monitors and large displays */
-@media screen and (min-width: 160rem) {}
+	/* ≥2560px --- Ultra-high-definition monitors and large displays */
+	@media screen and (min-width: 160rem) {}
 
-/* ≥3840px --- Ultra-high-definition monitors and large displays */
-@media screen and (min-width: 240rem) {}
+	/* ≥3840px --- Ultra-high-definition monitors and large displays */
+	@media screen and (min-width: 240rem) {}

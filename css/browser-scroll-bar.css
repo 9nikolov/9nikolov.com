@@ -1,16 +1,24 @@
-/* SCROLL BAR */
+/*----------------------------------------------
+------------------------------------------------
+1. Browser Scroll Bar
+------------------------------------------------
+----------------------------------------------*/
+
 /* width */
 ::-webkit-scrollbar {
     width: 20px;
 }
+
 /* background color */
 ::-webkit-scrollbar-track {
     background: #111111;
 }
+
 /* color */
 ::-webkit-scrollbar-thumb {
     background: rgba(67, 67, 67, 1);
 }
+
 /* color on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(89, 89, 89, 1);

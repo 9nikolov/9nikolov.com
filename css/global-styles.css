@@ -1,0 +1,55 @@
+/*----------------------------------------------
+------------------------------------------------
+1. Global Styles
+------------------------------------------------
+----------------------------------------------*/
+
+@font-face {
+	font-family: Arial;
+	src: url('fonts/Arial/Arial.otf');
+}
+
+@font-face {
+	font-family: Horizon;
+	src: url('fonts/Horizon/horizon.otf');
+}
+
+@font-face {
+	font-family: Horizon-Outlined;
+	src: url('fonts/Horizon/horizon_outlined.otf');
+}
+
+:root {
+	--base-font-size: 16px;
+	--my-yellow: #FFC600;
+	--my-black: #111111;
+}
+
+html {
+	font-size: var(--base-font-size);
+}
+
+body {
+	background-color: var(--my-black);
+	color: white;
+}
+
+p {
+	font-family: Arial;
+	line-height: 150%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Horizon;
+	line-height: 125%;
+}
