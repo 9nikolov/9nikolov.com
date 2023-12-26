@@ -6,17 +6,17 @@
 
 @font-face {
 	font-family: Arial;
-	src: url('fonts/Arial/Arial.otf');
+	src: url('../fonts/Arial/Horizon.otf');
 }
 
 @font-face {
 	font-family: Horizon;
-	src: url('fonts/Horizon/horizon.otf');
+	src: url('../fonts/Horizon/horizon.otf');
 }
 
 @font-face {
 	font-family: Horizon-Outlined;
-	src: url('fonts/Horizon/horizon_outlined.otf');
+	src: url('../fonts/Horizon/horizon_outlined.otf');
 }
 
 :root {
