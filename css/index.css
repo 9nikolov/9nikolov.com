@@ -315,6 +315,11 @@
 		margin-bottom: 5px;
 	}
 
+	.benefits-section{
+		margin-left: 24px;
+    	margin-right: 24px;
+	}
+
 	.benefits-section__heading {
 		font-size: 3rem;
 	}
@@ -322,10 +327,12 @@
 	.benefits-section__card {
 		min-width: none;
 		max-width: none;
-		margin-left: 64px;
-		margin-right: 64px;
+		margin-bottom: 48px;
 		display: block;
+		width: 640px;
+		/* DEBUG
 		width: 700px;
+		*/
 
 	}
 
