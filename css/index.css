@@ -59,7 +59,7 @@
 .hero-section__badge {
 	width: 1.75rem;
 	height: 1.75rem;
-	padding: 0.25rem;
+	margin: 0.25rem;
 }
 
 .benefits-section {
@@ -179,7 +179,7 @@
 	.hero-section__badge {
 		width: 2rem;
 		height: 2rem;
-		padding: 0.5rem;
+		margin: 0.5rem;
 	}
 
 	.benefits-section__card {
@@ -224,7 +224,9 @@
 		line-height: 1.5;
 	}
 
-	.benefits-section__card:nth-child(2) {
+	/* REFACTOR THIS CODE (make use of ".benefits-section__card--even")
+
+	.benefits-section__card--even {
 		.benefits-section__image {
 			width: 212px;
 			margin: 0px;
@@ -234,9 +236,19 @@
 			order: -2;
 			margin-right: auto;
 		}
-
-		/* Add your styles for the second child here */
 	}
+
+	*/
+
+	/* Change alignment of even-numbered cards */
+	.benefits-section__card--even {
+		.benefits-section__image {
+			margin: 0px;
+			order: -2;
+			margin-right: auto;
+		}
+	}
+
 
 	/* ... (existing styles) */
 
@@ -256,8 +268,8 @@
 	.hero-section__badge {
 		width: 30px;
 		height: 30px;
-		padding: 0;
-		padding-right: 12px;
+		margin: 0;
+		margin-right: 12px;
 	}
 
 }
@@ -266,6 +278,7 @@
 @media screen and (min-width: 48rem) {
 
 	.hero-section {
+		margin-top: 40px;
 		flex-direction: row;
 	}
 
@@ -273,73 +286,133 @@
 		text-align: left;
 	}
 
+	.hero-section__subheading {
+		font-size: 1.5rem;
+	}
+
 	.hero-section__paragraph {
+		margin-top: 32px;
+		font-size: 12px;
 		text-align: left;
 	}
 
 	.hero-section__image {
 		order: 2;
+		max-width: none;
+		width: 220px;
+		margin-left: 48px;
 	}
 
 	.hero-section__badges-sets-wrapper {
-		margin-top: 8px;
 		text-align: left;
 		display: contents;
 	}
 
-	.benefits-section__card {
-		display: block;
-		width: 700px;
-		max-width: none;
-	}
-
-	.benefits-section__image {
-		display: inline-block;
-		width: 288px;
-		height: auto;
-		margin-bottom: 1rem;
+	.hero-section__badge {
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		margin-bottom: 5px;
 	}
 
 	.benefits-section__heading {
-		font-size: 2rem;
+		font-size: 3rem;
+	}
+
+	.benefits-section__card {
+		min-width: none;
+		max-width: none;
+		margin-left: 64px;
+		margin-right: 64px;
+		display: block;
+		width: 700px;
+
+	}
+
+	.benefits-section__image {
+		margin-left: 0px;
+		margin-bottom: 24px;
+		width: 192px;
 	}
 
 	.benefits-section__paragraph {
 		font-size: 1rem;
 	}
 
-	.benefits-section__card {
-		min-width: none;
-		max-width: none;
+	.emoji-waving-hand {
+		width: 24px;
+		height: 24px;
+		margin-right: 16px;
 	}
 
-	.benefits-section__card {
-		width: none;
+	.benefits-section__heading {
+		font-size: 24px;
+		margin-bottom: 24px;
 	}
 
-	.benefits-section__card:nth-child(2) {
+	.benefits-section__paragraph {
+		font-size: 12px;
+		margin-top: 12px;
+	}
+
+	/* Change alignment of even-numbered cards */
+	.benefits-section__card--even {
 		.benefits-section__image {
-			width: 288px;
+			margin-right: 0px;
+			margin-left: auto;
+			margin-bottom: 24px;
 		}
 
-		.call-to-action__button {
-			width: 200px;
-			height: 40px;
-			font-size: 1rem;
+		.benefits-section__heading {
+			text-align: right;
+			justify-content: end;
+		}
+
+		.benefits-section__paragraph {
+			text-align: right;
 		}
 	}
 
-	/* ≥1024px --- Standard desktop and laptop screens */
-	@media screen and (min-width: 64rem) {}
+}
 
-	/* 	≥1280px --- Larger desktop screens and some high-resolution laptops */
-	@media screen and (min-width: 80rem) {}
+/* ≥1024px --- Standard desktop and laptop screens */
+@media screen and (min-width: 64rem) {}
 
-	/* ≥1920px --- Larger desktop screens and high-resolution monitors */
-	@media screen and (min-width: 120rem) {}
+/* 	≥1280px --- Larger desktop screens and some high-resolution laptops */
+@media screen and (min-width: 80rem) {}
 
-	/* ≥2560px --- Ultra-high-definition monitors and large displays */
-	@media screen and (min-width: 160rem) {}
+/* ≥1920px --- Larger desktop screens and high-resolution monitors */
+@media screen and (min-width: 120rem) {
 
-	/* ≥3840px --- Ultra-high-definition monitors and large displays */
-	@media screen and (min-width: 240rem) {}
+	.hero-section__heading {
+		font-size: 88px;
+	}
+
+	.hero-section__subheading {
+		font-size: 48px;
+	}
+
+	.hero-section__paragraph {
+		font-size: 16px;
+	}
+
+	.hero-section__badge {
+		width: 40px;
+		height: 40px;
+		margin-right: 12px;
+		margin-bottom: 12px;
+	}
+
+	.hero-section__image {
+		max-width: none;
+		width: 456px;
+		height: auto;
+	}
+
+}
+
+/* ≥2560px --- Ultra-high-definition monitors and large displays */
+@media screen and (min-width: 160rem) {}
+
+/* ≥3840px --- Ultra-high-definition monitors and large displays */
+@media screen and (min-width: 240rem) {}
