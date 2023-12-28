@@ -23,7 +23,7 @@
 
 
 .hero-section__image {
-	max-width: 250px;
+	max-width: 240px;
 	height: auto;
 	margin-bottom: 1.5rem;
 }
@@ -40,7 +40,7 @@
 }
 
 .hero-section__heading {
-	font-size: 40px;
+	font-size: 38px;
 }
 
 .hero-section__subheading {
@@ -68,14 +68,13 @@
 }
 
 .benefits-section__card {
-
-	width: 300px;
+	width: 280px;
 	text-align: left;
 	margin-bottom: 4rem;
 }
 
 .benefits-section__image {
-	max-width: 300px;
+	max-width: 280px;
 	margin-bottom: 1rem;
 }
 
@@ -132,13 +131,14 @@
 	.hero-section__paragraph {
 		margin-top: 24px;
 		font-size: 18px;
+		margin-bottom: 12px;
 	}
 
 	.hero-section__badge {
-		width: 36px;
-		height: 36px;
+		width: 32px;
+		height: 32px;
 		margin: 0;
-		margin-right: 12px;
+		margin-right: 11px;
 	}
 
 	.benefits-section__card {
@@ -161,8 +161,9 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: end;
-		order: 3;
-		margin-left: auto;
+		order: -223;
+		margin-right: auto;
+		margin-bottom: 24px;
 	}
 
 	.emoji-waving-hand {
@@ -189,7 +190,17 @@
 		.benefits-section__image {
 			margin: 0px;
 			order: -2;
-			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 24px;
+		}
+		.benefits-section__heading{
+			text-align: end;
+			display: flex;
+			justify-content: end;
+			align-items: end;
+		}
+		.benefits-section__paragraph{
+			text-align: end;
 		}
 	}
 
@@ -240,7 +251,7 @@
 		order: 2;
 		max-width: none;
 		width: 260px;
-		margin-left: 32px;
+		margin-left: 0px;
 		margin-bottom: 0px;
 	}
 
@@ -266,7 +277,7 @@
 		max-width: none;
 		margin-bottom: 48px;
 		display: block;
-		width: 740px;
+		width: 690px;
 	}
 
 	.benefits-section__image {
@@ -382,7 +393,7 @@
 /* 	≥1280px --- Larger desktop screens and some high-resolution laptops */
 @media screen and (min-width: 80rem) {
 
-	.hero-section{
+	.hero-section {
 		margin-top: 64px;
 	}
 
@@ -414,25 +425,44 @@
 
 	.benefits-section__card {
 		width: 1060px;
+		/* parent container of children IMAGE + HEADING&PARAGRAPH */
+		display: flex;
+		flex-direction: row;
 	}
 
 	.benefits-section__image {
 		max-width: none;
-		width: 300px
+		width: 300px;
+		order: -9;
+		margin-right: 48px;
+	}
+
+	.benefits-section__heading-paragraph-wrapper {
+		order: 2;
 	}
 
 	.benefits-section__heading {
-		font-size: 32px;
+		font-size: 28px;
 	}
 
 	.emoji-waving-hand {
-		width: 32px;
-		height: 32px;
-		margin-right: 24px;
+		width: 28px;
+		height: 28px;
+		margin-right: 28px;
 	}
 
 	.benefits-section__paragraph {
-		font-size: 18px
+		font-size: 16px
+	}
+
+	.benefits-section__card--even {
+
+		justify-content: end;
+
+		.benefits-section__image {
+			order: 444;
+			margin-left: 48px;
+		}
 	}
 
 	.call-to-action__button {
@@ -469,7 +499,7 @@
 		font-size: 40px;
 	}
 
-	.hero-section__paragraph{
+	.hero-section__paragraph {
 		font-size: 20px;
 		margin-bottom: 16px;
 		margin-top: 72px;
@@ -488,6 +518,13 @@
 
 	.benefits-section__image {
 		width: 320px;
+		margin-right: 56px;
+	}
+
+	.benefits-section__card--even {
+		.benefits-section__image {
+			margin-left: 56px;
+		}
 	}
 
 }
@@ -496,7 +533,7 @@
 /* ≥1920px --- Larger desktop screens and high-resolution monitors */
 @media screen and (min-width: 120rem) {
 
-	.hero-section{
+	.hero-section {
 		margin-top: 192px;
 		margin-bottom: 256px;
 	}
@@ -536,6 +573,7 @@
 
 	.benefits-section__image {
 		width: 420px;
+		margin-right: 72px;
 	}
 
 	.benefits-section__heading {
@@ -556,6 +594,12 @@
 		width: 182px;
 		height: 49px;
 		font-size: 16px;
+	}
+
+	.benefits-section__card--even {
+		.benefits-section__image {
+			margin-left: 72px;
+		}
 	}
 
 }
