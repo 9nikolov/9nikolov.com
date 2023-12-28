@@ -224,22 +224,6 @@
 		line-height: 1.5;
 	}
 
-	/* REFACTOR THIS CODE (make use of ".benefits-section__card--even")
-
-	.benefits-section__card--even {
-		.benefits-section__image {
-			width: 212px;
-			margin: 0px;
-			display: flex;
-			justify-content: flex-end;
-			align-items: end;
-			order: -2;
-			margin-right: auto;
-		}
-	}
-
-	*/
-
 	/* Change alignment of even-numbered cards */
 	.benefits-section__card--even {
 		.benefits-section__image {
@@ -248,9 +232,6 @@
 			margin-right: auto;
 		}
 	}
-
-
-	/* ... (existing styles) */
 
 	.benefits-section__card p:not(:last-child) {
 		margin-bottom: 0rem;
@@ -330,10 +311,6 @@
 		margin-bottom: 48px;
 		display: block;
 		width: 640px;
-		/* DEBUG
-		width: 700px;
-		*/
-
 	}
 
 	.benefits-section__image {
