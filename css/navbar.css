@@ -19,7 +19,7 @@ body {
     cursor: pointer;
     outline: inherit;
     /* padding & margin */
-    margin-right: 24px;
+    margin-right: 0px;
     display: none;
 }
 
@@ -37,6 +37,7 @@ body {
     top: 0;
     background-color: #111111;
     z-index: 100;
+
 }
 
 .navbar .logo {
@@ -67,11 +68,15 @@ body {
 
     .navbar {
         padding: 0px;
-        height: 80px;
+        height: 60px;
     }
 
+
     .navbar .logo {
-        padding: 32px;
+        /* padding: 32px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .navbar .close-hamburger-menu {
@@ -157,13 +162,10 @@ body {
 
 }
 
+
+/* CLEAN CODE BELOW */
+
 @media only screen and (min-width: 1024px) {
-    .navbar {
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
 
     .navbar .links {
         column-gap: 48px;
@@ -192,21 +194,13 @@ body {
 
 @media only screen and (min-width: 1200px) {
     .navbar {
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .navbar .links {
         column-gap: 64px;
-    }
-
-    .navbar .links a:hover {
-        font-size: 17px;
-    }
-
-    .navbar .close-hamburger-menu {
-        display: none;
     }
 }

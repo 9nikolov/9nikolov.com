@@ -21,8 +21,7 @@
 
 
 .hero-section__image {
-	width: 70%;
-	max-width: 300px;
+	max-width: 220px;
 	height: auto;
 	margin-bottom: 1rem;
 }
@@ -52,8 +51,6 @@
 	font-size: 1rem;
 	margin-bottom: 0.5rem;
 }
-
-.hero-section__badges-sets-wrapper {}
 
 .hero-section__badge {
 	width: 1.75rem;
@@ -162,6 +159,12 @@
 /* ≥568px ---- Phones in landscape mode, smaller tablets) */
 @media screen and (min-width: 35.5em) {
 
+	/* HEROMARGINS */
+	.hero-section{
+
+	}
+
+
 	.hero-section__heading {
 		font-size: 3rem;
 	}
@@ -261,7 +264,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: 0px;
 		flex-direction: row;
 	}
 
@@ -371,10 +373,7 @@
 @media screen and (min-width: 64rem) {
 
 	.hero-section{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0px;
+		height: 400px;
 	}
 
 	.hero-section__heading{
