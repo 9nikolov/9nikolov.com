@@ -17,9 +17,9 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	margin-top: 2rem;
-	margin-bottom: 4rem;
+	min-height: calc(100vh - 100px);
 }
+
 
 .hero-section__image {
 	width: 70%;
@@ -259,7 +259,7 @@
 @media screen and (min-width: 48rem) {
 
 	.hero-section {
-		margin-top: 40px;
+		margin-top: 64px;
 		flex-direction: row;
 	}
 
@@ -366,16 +366,24 @@
 
 /* ≥1024px --- Standard desktop and laptop screens */
 @media screen and (min-width: 64rem) {
-	
+
+	.hero-section{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px;
+		min-height: calc(100vh - 87px);
+	}
+
 	.hero-section__heading{
 		font-size: 68px;
 	}
 	.hero-section__subheading{
-		font-size: 34px;
+		font-size: 32px;
 	}
 	.hero-section__paragraph{
 		margin-top: 48px;
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.hero-section__badge{
 		width: 30px;
@@ -384,7 +392,7 @@
 		margin-bottom: 9px;
 	}
 	.hero-section__image{
-		width: 300px;
+		width: 320px;
 		margin-left: 96px;
 	}
 
@@ -406,7 +414,55 @@
 	}
 
 	.benefits-section__paragraph{
-		font-size: 18px
+		font-size: 16px
+	}
+
+}
+
+/* 	≥1280px --- Larger desktop screens and some high-resolution laptops */
+@media screen and (min-width: 80rem) {
+	
+	.hero-section__heading{
+		font-size: 84px;
+	}
+	.hero-section__subheading{
+		font-size: 36px;
+	}
+	.hero-section__paragraph{
+		margin-top: 48px;
+		font-size: 18px;
+	}
+	.hero-section__badge{
+		width: 36px;
+		height: 36px;
+		margin-right: 18px;
+		margin-bottom: 9px;
+	}
+	.hero-section__image{
+		width: 360px;
+		margin-left: 86px;
+		margin-bottom: 0px;
+	}
+
+	.benefits-section__card{
+		width: 920px;
+	}
+
+	.benefits-section__image{
+		width: 300px
+	}
+
+	.benefits-section__heading{
+		font-size: 28px;
+	}
+
+	.emoji-waving-hand{
+		width: 28px;
+		height: 28px;
+	}
+
+	.benefits-section__paragraph{
+		font-size: 16px
 	}
 
 }
@@ -458,45 +514,49 @@
 }
  */
 
-/* 	≥1280px --- Larger desktop screens and some high-resolution laptops  */
+/* 	≥1280px --- Larger desktop screens and some high-resolution laptops
 @media screen and (min-width: 80rem) {}
 
 @media screen and (min-width: 96rem) {
 
 }
+*/
 
-
-/* ≥1920px --- Larger desktop screens and high-resolution monitors 
+/* ≥1920px --- Larger desktop screens and high-resolution monitors */
 @media screen and (min-width: 120rem) {
 
 	.hero-section__heading {
-		font-size: 88px;
+		font-size: 104px;
 	}
 
 	.hero-section__subheading {
-		font-size: 48px;
+		font-size: 52px;
 	}
 
 	.hero-section__paragraph {
-		font-size: 16px;
+		margin-top: 72px;
+		margin-bottom: 16px;
+		font-size: 26px;
+
 	}
 
 	.hero-section__badge {
-		width: 40px;
-		height: 40px;
-		margin-right: 12px;
-		margin-bottom: 12px;
+		width: 44px;
+		height: 44px;
+		margin-right: 22px;
+		margin-bottom: 11px;
 	}
 
 	.hero-section__image {
 		max-width: none;
-		width: 456px;
+		width: 512px;
+		margin-left: 256px;
 		height: auto;
 	}
 
 }
 
-*/
+
 
 /* ≥2560px --- Ultra-high-definition monitors and large displays */
 @media screen and (min-width: 160rem) {}
