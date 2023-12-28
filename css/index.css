@@ -337,6 +337,7 @@
 	.benefits-section__paragraph {
 		font-size: 12px;
 		margin-top: 12px;
+		max-width: 75ch;
 	}
 
 	/* Change alignment of even-numbered cards */
@@ -355,17 +356,117 @@
 		.benefits-section__paragraph {
 			text-align: right;
 		}
+
+		.benefits-section__paragraph{
+			margin-left: auto;
+		}
 	}
 
 }
 
 /* ≥1024px --- Standard desktop and laptop screens */
-@media screen and (min-width: 64rem) {}
+@media screen and (min-width: 64rem) {
+	
+	.hero-section__heading{
+		font-size: 68px;
+	}
+	.hero-section__subheading{
+		font-size: 34px;
+	}
+	.hero-section__paragraph{
+		margin-top: 48px;
+		font-size: 18px;
+	}
+	.hero-section__badge{
+		width: 30px;
+		height: 30px;
+		margin-right: 18px;
+		margin-bottom: 9px;
+	}
+	.hero-section__image{
+		width: 300px;
+		margin-left: 96px;
+	}
 
-/* 	≥1280px --- Larger desktop screens and some high-resolution laptops */
+	.benefits-section__card{
+		width: 920px;
+	}
+
+	.benefits-section__image{
+		width: 280px
+	}
+
+	.benefits-section__heading{
+		font-size: 28px;
+	}
+
+	.emoji-waving-hand{
+		width: 28px;
+		height: 28px;
+	}
+
+	.benefits-section__paragraph{
+		font-size: 18px
+	}
+
+}
+
+/* 	≥1280px --- Larger desktop screens and some high-resolution laptops
+@media screen and (min-width: 80rem) {
+
+	.hero-section__heading{
+		font-size: 72px;
+	}
+	.hero-section__subheading{
+		font-size: 32px;
+	}
+	.hero-section__paragraph{
+		font-size: 16px;
+	}
+	.hero-section__badge{
+		width: 28px;
+		height: 28px;
+		margin-right: 16px;
+		margin-bottom: 8px;
+	}
+	.hero-section__image{
+		width: 306px;
+		margin-left: 80px;
+	}
+
+	.benefits-section__card{
+		width: 940px;
+	}
+
+	.benefits-section__image{
+		width: 266.4px
+	}
+
+	.benefits-section__heading{
+		font-size: 24px;
+	}
+
+	.emoji-waving-hand{
+		width: 28px;
+		height: 28px;
+	}
+
+	.benefits-section__paragraph{
+		font-size: 16px
+	}
+
+}
+ */
+
+/* 	≥1280px --- Larger desktop screens and some high-resolution laptops  */
 @media screen and (min-width: 80rem) {}
 
-/* ≥1920px --- Larger desktop screens and high-resolution monitors */
+@media screen and (min-width: 96rem) {
+
+}
+
+
+/* ≥1920px --- Larger desktop screens and high-resolution monitors 
 @media screen and (min-width: 120rem) {
 
 	.hero-section__heading {
@@ -394,6 +495,8 @@
 	}
 
 }
+
+*/
 
 /* ≥2560px --- Ultra-high-definition monitors and large displays */
 @media screen and (min-width: 160rem) {}
